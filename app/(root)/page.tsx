@@ -3,7 +3,7 @@ import HeaderBox from '@/components/HeaderBox';
 import TotalBalanceBox from '@/components/TotalBalanceBox';
 
 function Home() {
-    const loggedIn = { firstName: 'Oluyemi' };
+    const loggedIn = { firstName: 'Paul', lastName: 'Oluyemi' };
   return (
     <section className='home'>
         <div className='home-content'>
