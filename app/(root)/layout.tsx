@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, IBM_Plex_Serif } from "next/font/google";
 import SideBar from "@/components/SideBar";
 import Image from "next/image";
+import MobileNav from "@/components/MobileNav";
 
 export default function RootLayout({
   children,
@@ -12,16 +13,18 @@ export default function RootLayout({
   return (
     <main className="flex h-screen w-full font-inter"> 
         <SideBar user={loggedIn} />
-        <div className="flex size-full flex-col">
+        <div className="flex size-full flex-row">
           <div className="root-layout">
            <Image src="/icons/logo.svg"
                   width={30}
                   height={30}
                   alt="menu icon"/>
           </div>
-
-        </div>
+         <div>
+         <MobileNav user={loggedIn}/>
+         </div>
         {children}
+        </div>
     </main>
   );
 }
