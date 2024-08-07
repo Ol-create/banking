@@ -1,9 +1,9 @@
 import React from 'react'
 
-const page = () => {
+const SignIn = () => {
   return (
-    <div>page</div>
+    <section className='flex-center size-full max-sm:px-6'>SignIn</section>
   )
 }
 
-export default page
+export default SignIn
