@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils'
 const SideBar = ({user}: SiderbarProps) => {
   const pathName = usePathname() 
   return (
-    <div className='siderbar'>
+    <div className='siderbar hidden md:block'>
         <nav className='flex flex-col gap-4'>
         <Link href="/" className='flex mb-12 cursor-pointer items-center gap-2'>
         <Image 
